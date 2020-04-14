@@ -7,6 +7,12 @@
     <meta charset="UTF-8">
     <meta name="description" content="Martin Guevara Kunerth">
     <title>Martin Guevara Kunerth</title>
+    <style>
+    body{
+    font-family: Arial, sans-serif;
+    text-align: left;
+    }
+    </style>
     
 
   </head>

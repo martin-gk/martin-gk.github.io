@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>CycleHeroes Graz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Courier, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: #ff1900;
+  }
+  .info-text {
+      color: black;
+      margin: 0;
+      padding: 0;
+      font-size: 1.7em;
+  }
+  .impressum-text {
+      color: white;
+  }
+  .jumbotron {
+    background-color: #ff1900;
+    color: #fff;
+    font-family: Courier, serif;
+    padding-top: 70px;
+  }
+  .jumbotron-text {
+      padding-top: 1.5em;
+  }
+  .text-left {
+      padding-left: 40px;
+  }
+  .text-right {
+      padding-right: 40px;
+  }
+  .jumbotron-title {
+      align-items: center;
+      color: black;
+      
+  }
+  .icons {
+      padding-top: 2em;
+  }
+  .contact-text {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  }
+  .price-image {
+    height: auto; 
+    width: 85%; 
+    margin-top: 2em; 
+    margin-bottom: 2em;
+  }
+  .icon {
+    height: 100%; 
+    width: 100%; 
+    object-fit: contain;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #1f1f1f;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Courier, serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ff1900 !important;
+    background-color: rgb(173, 173, 173) !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ff1900;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+    .text-left {
+      padding: 0;
+      text-align: center;
+  }
+  .text-right {
+      padding: 0;
+      text-align: center;
+  }
+  .price-image {
+      width: 100%;
+  }
+  .icon {
+      width: 50%;
+      object-fit: contain;
+  }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+    .text-left {
+      padding: 0;
+      text-align: center;
+  }
+  .text-right {
+      padding: 0;
+      text-align: center;
+  }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home">HOME</a>
+      <a class="navbar-brand" href="#contact">KONTAKT</a>
+      <a class="navbar-brand" href="#prices">TARIFE</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://de-de.facebook.com/cycleheroes.at/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a></li>
+        <li><a href="https://www.instagram.com/cycleheroes_graz/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center align-items-center" id="home">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img src="C_fertig/Schriftzug_CH.png" alt="CycleHeroes-Logo" style='height: auto; width: 85%; object-fit: contain'>
+        </div>
+        <div class="col-sm-7 jumbotron-title">
+            <h1>Lastenrad<br>Kurierdienst</h1>
+        </div>
+    </div>
+  <p class="jumbotron-text">Wir transportieren Kleines bis extra Großes, <br>schnell und umweltschonend per Lastenrad und Anhänger.</p> 
+<div class="row icons">
+    <div class="col-sm-3">
+        <img class="icon" src="C_fertig/PG_S.png" alt="">
+    </div>
+    <div class="col-sm-3">
+        <img class="icon" src="C_fertig/PG_M.png" alt="">
+    </div>
+    <div class="col-sm-3">
+        <img class="icon" src="C_fertig/PG_L.png" alt="">
+    </div>
+    <div class="col-sm-3">
+        <img class="icon" src="C_fertig/PG_XL.png" alt="">
+    </div>
+</div>
+</div>
+<div id="contact" class="phone-number text-center" style="background-color: black;">
+    <a href="tel:004368120352052"><img src="C_fertig/NummerZeichenfläche 1.png" alt="" style='height: 100%; width: 100%; object-fit: contain'></a>
+</div>
+<div class="text-center" style="background-color: #ff1900;">
+    <div class="row contact-text">
+        <div class="col-sm-6 text-left container">
+            <p class="info-text">Harrachgasse 12</p>
+            <p class="info-text">8010 Graz</p>
+           <a class="info-text" href="mailto:contact@cycleheroes.at">contact@cycleheroes.at</a>
+        </div>
+        <div class="col-sm-6 text-right container">
+            <p class="info-text">Geschäftszeiten:</p>
+            <p class="info-text">Mo-Fr 8-17 Uhr</p>
+            <p class="info-text">Sa 8-15 Uhr</p>
+        </div>
+        </div>
+</div>
+
+        <div id="prices" style="background-color: black;">
+            <div class="container text-center">
+            <img class="price-image" src="C_fertig/Tarife.jpg" alt="">
+        </div>
+    </div>
+<footer class="container-fluid text-center mt-3" style="background-color: black;">
+    <p></p>
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p class="impressum-text">Impressum:<br>
+    CycleHeroes OG<br>
+    Harrachgasse 12<br>
+    8010 Graz<br>
+    Telefon: 0681 20 352 052<br>
+    contact@cycleheroes.at<br>
+    UID: ATU<br>
+    Gerichtsstand Graz</p>
+    <a class="impressum-text" href="C_fertig/AGBs_Datenschutz.pdf">AGBs/Datenschutz</a>
+  
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

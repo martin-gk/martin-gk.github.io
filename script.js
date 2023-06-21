@@ -166,7 +166,7 @@ visualConfirmBtn.addEventListener("click", function () {
 	videoContainer.style.display = "block";
 	videoDescriptionUni.style.display = "block";
     videoContent.innerHTML =
-      '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=h18Js7ci_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+      '<iframe width="560" height="315" src="https://www.youtube.com/embed/h18Js7ci_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     visualScreen.style.display = "none";
     visualBackBtn.style.display = "none"; // Show the visual "Back" button
     visualConfirmBtn.style.display = "none"; // Show the visual "Confirm" button
@@ -207,7 +207,7 @@ videoResetBtn.addEventListener("click", function() {
         '<iframe width="560" height="315" src="https://www.youtube.com/embed/PlnpRfod6lE" title="Laufen in Graz - Murradweg - 10km Lauf - Zeitraffer - Hyperlapse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	} if (sortOfrun == "uni") {
 	    videoContent.innerHTML =
-        '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=h18Js7ci_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/h18Js7ci_Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}else {}
 })
 

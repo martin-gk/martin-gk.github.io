@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>RunFee - the new experience</title>
-  <link rel="stylesheet" href="styles_tesla.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -18,14 +18,19 @@
     </nav> -->
 	<button class="accordion">Settings</button>
 		<div class="panel">
-		<p>In the future - here you can change your Settings</p>
+		<p>Change the intensity:</p>
+		<div class="slider">
+		<input type="range" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
+		<p id="rangeValue">50</p>
+		</div>
+		<p>FUTURE WORK!</p>
 		</div>
   </header>
   <main>
     <div id="buttonContainer">
-      <button id="trackBtn">Track</button>
-      <button id="replayBtn">Replay</button>
-      <button id="liveBtn">Live</button>
+      <button class="hoverBtn" id="trackBtn">Track</button>
+      <button class="hoverBtn" id="replayBtn">Replay</button>
+      <button class="hoverBtn" id="liveBtn">Live</button>
     </div>
     <div id="replayScreen" style="display: none;">
       <h2>Replay</h2>
@@ -44,61 +49,71 @@
         </label>
       </div>
       <div id="replayButtons" class="buttonGroup">
-        <button id="replayBackBtn">Back</button>
-        <button id="replayConfirmBtn">Confirm</button>
+        <button class="hoverBtn" id="replayBackBtn">Back</button>
+        <button class="hoverBtn" id="replayConfirmBtn">Confirm</button>
       </div>
-	  <div id="phyVisSelectionError" style="display: none;">
-		 <h2>You have to select a possible option!</h2>
-	  </div>
     </div>
     <div id="visualScreen" style="display: none;">
       <h2>Visual</h2>
-      <select id="selectWheel">
-        <option value="mur">Mur</option>
-        <option value="uni">Uni</option>
+      <select id="selectWheelV">
+        <option value="murV">Mur</option>
+        <option value="uniV">Uni</option>
       </select>
       <div class="buttonGroup">
-        <button id="visualBackBtn">Back</button>
-        <button id="visualConfirmBtn">Confirm</button>
+        <button class="hoverBtn" id="visualBackBtn">Back</button>
+        <button class="hoverBtn" id="visualConfirmBtn">Confirm</button>
       </div>
     </div>
 	<div id="physicalScreen" style="display: none;">
       <h2>Physical</h2>
-	  <h1>NOT IMPLEMENTED YET go back</h1>
       <div class="buttonGroup">
-        <button id="physicalBackBtn">Back</button>
-        <button id="physicalConfirmBtn">Confirm</button>
+	    <button class="hoverBtn" id="physicalBackBtn">Back</button>
+	  	<button class="hoverBtn physicalStartBtn" id="physicalStartBtn">Start Suit</button>
+      </div>
+    </div>
+	<div id="physicalVisualScreen" style="display: none;">
+      <h2>Physical and Visual</h2>
+	  <select id="selectWheelPV">
+        <option value="murPV">Mur</option>
+        <option value="uniPV">Uni</option>
+      </select>
+      <div class="buttonGroup">
+        <button class="hoverBtn" id="physicalVisualBackBtn">Back</button>
+        <button class="hoverBtn" id="physicalVisualConfirmBtn">Confirm</button>
       </div>
     </div>
     <div id="videoContainer" style="display: none;">
 	  <div id= "videoDescriptionUni" style="display: none;">
-		<h1>Enjoy your run arround the Uni</h1>
+		    <h1>Enjoy your run around the Uni</h1>
 	  </div>
 	  <div id= "videoDescriptionMur" style="display: none;">
-		<h1>Enjoy your run arround the Mur</h1>
+		    <h1>Enjoy your run around the Mur</h1>
 	  </div>	  
       <div id="videoContent">
         <!-- Embedded YouTube video will be displayed here -->
       </div>
-	  <div class="buttonGroup">
-        <button id="videoBackBtn">Back</button>
-		<button id="videoResetBtn">Reset</button>
+	  <div class="buttonGroup" id="buttonGroupVisual" style="display: none;">
+        <button class="hoverBtn" id="videoBackBtn">Back</button>
+      </div> 
+	   <div class="buttonGroup" id="buttonGroupPhysicalVisual" style="display: none;">
+        <button class="hoverBtn" id="videoPhysicalBackBtn">Back</button>
+        <button class="hoverBtn physicalStartBtn" id="physicalVisualStartBtn">Start Suit</button>
       </div> 
     </div>
     <div id="trackScreen" style="display: none;">
       <h2>Track</h2>
-	  <h1>NOT IMPLEMENTED YET go back</h1>
+	  <h1>Coming soon - please go back</h1>
 	  <div class="buttonGroup">
-        <button id="trackBackBtn">Back</button>
-        <button id="trackConfirmBtn">Confirm</button>
+        <button class="hoverBtn" id="trackBackBtn">Back</button>
+        <button class="hoverBtn" id="trackConfirmBtn">Confirm</button>
       </div>
 	</div>
 	<div id="liveScreen" style="display: none;">
       <h2>Live</h2>
-	  <h1>NOT IMPLEMENTED YET go back</h1>
+	  <h1>Coming soon - please go back</h1>
 	  <div class="buttonGroup">
-        <button id="liveBackBtn">Back</button>
-        <button id="liveConfirmBtn">Confirm</button>
+        <button class="hoverBtn" id="liveBackBtn">Back</button>
+        <button class="hoverBtn" id="liveConfirmBtn">Confirm</button>
       </div>
 	</div>
   </main>

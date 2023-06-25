@@ -1,4 +1,4 @@
-let executionProcess;
+
 const homeBtn = document.getElementById("homeBtn");
 
 const replayBtn = document.getElementById("replayBtn");
@@ -160,33 +160,18 @@ function startScript() {
   if (
     physicalStartBtn.textContent === "Start Suit" ||
     physicalVisualStartBtn.textContent === "Start Suit"
-  ) {
-    fetch("/execute-script")
-      .then((response) => response.text())
-      .then((message) => {
-        console.log(message);
-        // Store the execution process ID returned from the server
-        executionProcess = message;
+  ) 
         physicalStartBtn.textContent = "Stop Suit";
         physicalVisualStartBtn.textContent = "Stop Suit";
-      })
-      .catch((error) => console.error(error));
+     
   } else if (
     physicalStartBtn.textContent === "Stop Suit" ||
     physicalVisualStartBtn.textContent === "Stop Suit"
   ) {
-    if (executionProcess) {
-      fetch(`/stop-script?pid=${executionProcess}`)
-        .then((response) => response.text())
-        .then((message) => {
-          console.log(message);
-          // Reset the execution process variable
-          executionProcess = null;
+    
           physicalStartBtn.textContent = "Start Suit";
           physicalVisualStartBtn.textContent = "Start Suit";
-        })
-        .catch((error) => console.error(error));
-    }
+       
   }
 }
 //------

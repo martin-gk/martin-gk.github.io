@@ -193,7 +193,7 @@ physicalVisualConfirmBtn.addEventListener("click", function () {
     videoDescriptionUni.style.display = "block";
     videoDescriptionMur.style.display = "none";
     videoContent.innerHTML =
-      '<video width="560" height="315" src="test.mp4" controls></video>';
+      '<iframe width="560" height="315" src="https://www.youtube.com/embed/MTbEwqNTW4U?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     physicalVisualScreen.style.display = "none";
     physicalVisualBackBtn.style.display = "none";
     physicalVisualConfirmBtn.style.display = "none";
@@ -246,7 +246,7 @@ visualConfirmBtn.addEventListener("click", function () {
     videoDescriptionUni.style.display = "block";
     videoDescriptionMur.style.display = "none";
     videoContent.innerHTML =
-      '<video width="560" height="315" src="test.mp4" controls></video>';
+      '<iframe width="560" height="315" src="https://www.youtube.com/embed/MTbEwqNTW4U?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
     visualScreen.style.display = "none";
     visualBackBtn.style.display = "none";
     visualConfirmBtn.style.display = "none";

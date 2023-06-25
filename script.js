@@ -160,7 +160,7 @@ function startScript() {
   if (
     physicalStartBtn.textContent === "Start Suit" ||
     physicalVisualStartBtn.textContent === "Start Suit"
-  ) 
+  ) {
         physicalStartBtn.textContent = "Stop Suit";
         physicalVisualStartBtn.textContent = "Stop Suit";
      

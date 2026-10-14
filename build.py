@@ -496,7 +496,7 @@ def build():
                 total += dst.stat().st_size
                 figures.append(
                     f'<figure class="shot"><video src="{dst.name}" controls playsinline preload="metadata"></video>'
-                    f'<figcaption><span>{label}</span> {esc(nfc(src.name))} · video · {human_size(dst.stat().st_size)}</figcaption></figure>')
+                    f'<figcaption><span>{label}</span></figcaption></figure>')
                 continue
             dst, size = web_image(src, d, f"{j:02d}")
             p.setdefault("first_web", dst.name)
@@ -507,7 +507,7 @@ def build():
             loading = "eager" if j == 1 else "lazy"
             figures.append(
                 f'<figure class="shot"><a href="{dst.name}"><img src="{dst.name}"{wh} alt="{alt}" loading="{loading}" decoding="async"></a>'
-                f'<figcaption><span>{label}</span> {esc(nfc(src.stem))} · {dims}{human_size(nbytes)}</figcaption></figure>')
+                f'<figcaption><span>{label}</span></figcaption></figure>')
         doc_links = []
         for src in p["docs"]:
             dst = d / slugify(src.stem)

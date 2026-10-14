@@ -6,8 +6,6 @@ order: 9
 Offenlegung gemäß § 25 Mediengesetz und Informationen gemäß § 5 E-Commerce-Gesetz.
 
 **Martin Guevara-Kunerth**
-[STRASSE UND HAUSNUMMER – bitte ergänzen]
-[PLZ] Graz, Österreich
 E-Mail: guevara.mrtn@gmail.com
 
 **Blattlinie:** Präsentation der künstlerischen Arbeit von Martin Guevara-Kunerth.
